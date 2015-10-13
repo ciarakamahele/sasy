@@ -1,0 +1,9 @@
+.*.swp
+.*.swo
+.DS_Store
+.dSYM
+main
+main.dSYM
+*.o
+*.pyc
+
