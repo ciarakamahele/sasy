@@ -57,7 +57,7 @@ PickOperator::PickOperator(int name) : Operator(name) {}
 void PickOperator::ApplicableActions(const State &state, const Environment &env, vector<unique_ptr<Action>> *actions) const {
   const int kPick = StringRegistry::Get()->GetInt("pick");
   const int kAtRobby = StringRegistry::Get()->GetInt("at_robby");
-  const int kCarry = StringRegistry::Get()->GetInt("cary");
+  const int kCarry = StringRegistry::Get()->GetInt("carry");
   const int kAt = StringRegistry::Get()->GetInt("at");
   const int kFree = StringRegistry::Get()->GetInt("free");
 
@@ -93,7 +93,7 @@ void PlaceOperator::ApplicableActions(const State &state, const Environment &env
   const int kAtRobby = StringRegistry::Get()->GetInt("at_robby");
   const int kAt = StringRegistry::Get()->GetInt("at");
   const int kFree = StringRegistry::Get()->GetInt("free");
-  const int kCarry = StringRegistry::Get()->GetInt("cary");
+  const int kCarry = StringRegistry::Get()->GetInt("carry");
 
   for (int room = 0; room < env.GetNumRooms(); room++) {
     // robot is in room

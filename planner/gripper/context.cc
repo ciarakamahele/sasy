@@ -45,11 +45,11 @@ bool Gripper(bool verbose, bool input_file, float discount) {
   const int kCarry = StringRegistry::Get()->GetInt("carry");
 
   int num_rooms = 2;
-  int num_balls = 2;
-  int num_grippers = 2;
+  int num_balls = 1;
+  int num_grippers = 1;
   int room = 0;
-  vector<int> ball_locs = {0, 0};
-  vector<int> gripper_holding {-1, -1};
+  vector<int> ball_locs = {0};
+  vector<int> gripper_holding {-1};
 
   assert(ball_locs.size() == num_balls);
   assert(gripper_holding.size() == num_grippers);

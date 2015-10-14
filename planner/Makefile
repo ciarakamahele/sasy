@@ -25,10 +25,10 @@
 
 SHELL = /bin/bash
 CXX = clang++
-CXXFLAGS = -std=c++11 -Wall -Werror -I. -I/usr/local/include -g
+CXXFLAGS = -std=c++11 -Wall -Werror -I. -I${HOME}/homebrew/include -g
 #OPTFLAGS = -O3 -march=native -DNDEBUG
 OPTFLAGS = -O3 -march=native
-LDFLAGS = -L/usr/local/lib -lgflags
+LDFLAGS = -L${HOME}/homebrew/lib -lgflags
 TARGET = main
 
 PROBLEMS = kitchen,rocksample,gripper
